@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcard2 Backside</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+    width: 6.25in;
+    height: 4.25in;
+    margin: 0;
+    padding: 0;
+    /* If using an image, the background image should have dimensions of 1875x1275 pixels. */
+    /* background-image: url(https://s3-us-west-2.amazonaws.com/public.lob.com/assets/beach.jpg); */
+    background-size: 6.25in 4.25in;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+}
+        .upper-left{
+            display: flex;
+        }
+        .upper-left-part{
+            background-image: url(./assets/images/left-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 3.6in;
+            height: 2.60in;
+            padding-top: .31in;
+        }
+        
+        p.text{
+            color: white;
+            /* padding-left: 25px; */
+            font-size: 13px;
+        }
+        p.headline{
+            position: absolute;
+            left: 1.6in;
+            top: -2in;
+            width: 3in;
+            text-align: center;
+            font-size: 14px;
+
+        }
+        .upper-right-part{
+            position: absolute;
+            left: 2.1in;
+           font-size: 15px;
+           color: #B17F49; 
+        }
+        .lower-bg{
+            background-image: url(./assets/images/lower-text-bg.png);
+            background-repeat:no-repeat;
+            /* background-repeat: no-repeat; */
+            width: 3.2in;
+            background-size: cover;
+            height: .871in;
+            margin-left: 35px;
+
+        }
+        span#title{
+
+            background-color: white;
+            color: #B17F49;
+            padding: .051in;
+            margin-left: 45px;
+            padding-right: 70px;
+            padding-left: 10px;
+            font-size: 14px;
+
+        }
+        .upper-left-part p.text{
+            padding-left: 65px;
+        }
+        .lower-bg p.text{
+            padding-left: 40px;
+            padding-top: 10px;
+        }
+            #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <div class="card-wrapper">
+        <div class="upper-part">
+            <div class="upper-left-part">
+                <div>
+                    <span id="title">Lorem ipsom</span>
+                    <p class="text"> do dolor sit, amet consectetur <br> adipisicing elit. Iure! Lorem <br> ipsum dolor sit amet.</p>
+
+                </div>
+                <div>
+                    <span id="title">Lorem ipsom</span>
+                    <p class="text"> do dolor sit, amet consectetur <br> adipisicing elit. Iure! Lorem <br> ipsum dolor sit amet.</p>
+
+
+                </div>
+            </div>
+            <div class="upper-right-part">
+                <p class="headline">SARAH,2 OF YOUR NEIGHBORS <br> REPLACED THEIR ROOFS FOR FREE! <br> FIND OUR HOW CAN YOU TOO</p>
+
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="lower-bg">
+                <p class="text">
+                    Lorem ipsum <br> dolor sit amet consectetur <br> adipisicing elit. Numquam aliquam debitis <br> quidem vol.
+                </p>
+
+            </div>
+            <div class="lower-bg">
+                <p class="text">
+                    Lorem ipsum <br> dolor sit amet consectetur <br> adipisicing elit. Numquam aliquam debitis <br> quidem vol.
+                </p>
+
+            </div>
+        </div>
+    </div>
+      <div id="safe-area">
+    <!-- All text should appear within the safe area. -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Postacrd Backside</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+
+    width: 6.25in;
+    height: 4.25in;
+    background-size: 6.25in 4.25in;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+    background-image: url(./assets/images/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+}
+.fast{
+    margin-top: .25in;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.fast p{
+    color: black;
+    margin-top: 0%;
+    margin-left: 20px;
+    
+}
+p{
+    margin-top: 0%;
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+
+}
+.fast-part,.time-part{
+    display: flex;
+}
+.right-text{
+    margin-right: 0%;
+}
+.headline div p{
+    font-size: 16px;
+    padding-left: 70px;
+    color: #F29F09;
+    padding-top: 0.25in;    
+    font-weight: 500;
+    text-align: left;
+}
+.body-wrapper{
+ /* padding: 5%; */
+}
+.bg-image img{
+    position: relative;
+    left: 0%;
+    top:-50%;
+}
+#to-do{
+width: 40px;
+height: 40px;
+}
+#clock{
+    width: 35px;
+    height: 40px;
+    }
+
+.full-wrapper{
+
+
+}
+/* .blue-bg{
+    background-color:#3C5AA5 ;
+    height: 200px;
+    padding: 5%;
+} */
+
+.blue-bg p{
+    color:black;
+}
+.blue-bg{
+    padding: 25px;
+    margin-bottom: 105px;
+}
+p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.linear-para{
+    display: flex;
+    position: absolute;
+    top: 0.86in;
+}
+.right-side-para{
+    padding-left: 80px;
+}
+.lower-linear-para{
+    position: absolute;
+    top: 1.7in;
+}
+.upper-para{
+font-size: 13px;
+}
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <div class="full-wrapper">
+    <div class="body-wrapper">
+        <div class="headline">
+            <div>
+                <p>SARAH,2 OF YOUR NEIGHBORS REPLACED THEIR <br> ROOFS FOR FREE! FIND OUR HOW CAN YOU TOO</p>
+             </div>
+        </div>
+        <div class="upper-para row">
+            <div class="blue-bg">
+                <div class="linear-para">
+                <div>
+                    <p>Lorem ipsum <br> dolor sit amet consectetur <br> adipisicing elit. Veniam voluptatibus <br> vel explicabo mollitia quasi!</p>
+
+                </div>
+                <div class="right-side-para">
+                    <p>Lorem ipsum <br> <br> dolor sit amet consectetur <br> adipisicing elit. Veniam voluptatibus <br> vel explicabo mollitia quasi!</p>
+
+                </div>
+            </div>
+                <div class="lower-linear-para">
+                    <p>Lorem ipsum <br> dolor sit amet consectetur <br> adipisicing elit. Veniam voluptatibus </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="fast">
+                <div class="left-bg ">
+                 <div class="fast-part container">
+                    <img id="to-do" src="./assets/images/clock.png" alt=""><p>Fast <br> ipsum dolor sit amet <br> adipisicing elit. <br> Repellendus, libero.</p>
+
+                </div>
+                <div class="time-part container"><img id="clock" src="./assets/images/cup.png" alt="">
+                    <p>Lorem ipsum <br> dolor sit amet consectetur <br> adipisicing elit. Veniam v<br> vel explicabo mollitia qu!</p>
+                </div>
+        </div>
+            
+            
+        </div>
+        
+    </div>
+</div>
+  <div id="safe-area">
+    <!-- All text should appear within the safe area. -->
+  </div>
+</body>
+</html>

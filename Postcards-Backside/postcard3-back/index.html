@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>postcard</title>
+<style>
+    *{
+    box-sizing: border-box;
+}
+body{
+    width: 6.25in;
+    height: 4.25in;
+    margin: 0;
+    padding: 0;
+    /* If using an image, the background image should have dimensions of 1875x1275 pixels. */
+    /* background-image: url(https://s3-us-west-2.amazonaws.com/public.lob.com/assets/beach.jpg); */
+    background-size: 6.25in 4.25in;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.body-wrapper{
+margin: 0%;
+padding: 0%;
+}
+.postcard-body{
+
+}
+.upper-part{
+display: flex;
+padding: 0%;
+color: black;
+height: 210px;
+}
+.right-upper-part{
+    width: 50%;
+    /* position: relative; */
+    padding-top: 7%;
+    padding-left: 5%;
+    /* line-height: 12px; */
+}
+.right-upper-part img{
+position: relative;
+/* left: 0%;
+top: 45%; */
+width: 80px;
+}
+.right-upper-part p{
+    position: relative;
+    /* bottom: 10%; */
+    /* line-height: 13x; */
+    left: 50%;
+    font-weight: 500;
+
+}
+.left-upper-part p{
+text-align: center;
+font-size: 21px;
+font-weight: 500;
+color: #59732E;
+padding-top: 30px;
+padding-left: 80px;
+}
+.lower-part{
+
+    background-image: url(./assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding:3%;
+    color: white;
+}
+#head{
+    color: #59732E;
+    position: relative;
+    left: 50%;
+    font-weight: 600;
+}
+#clock{
+position: absolute;
+left: 4.3in;
+/* top: 40%; */
+
+}
+#cup{
+position: absolute;
+left: 4.3in;
+/* top: 40%; */
+}
+.bolder-fonts{
+    font-weight: 700;
+}
+#right-side-text{
+    position: relative;
+    /* margin-bottom: 50%; */
+}
+.right-text-section span,.right-text-section p{
+    position: relative;
+    bottom: 70%;
+}
+.right-text-section{
+    /* padding-top: 5%; */
+}
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+</style>
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="postcard-body">
+            <div class="upper-part">
+                <div class="left-upper-part">
+
+                    <p>SARAH,2 OF YOUR <br> NEIGHBORS REPLACED <br> THEIR ROOFS FOR FREE! <br> FIND OUR HOW <br> CAN YOU TOO</p>
+
+                </div>
+                <div class="right-upper-part">
+                    <img src="./assets/images/right-img.png" alt="">
+                    <div class="right-text-section">
+                        <span id="head">Fast</span>
+                        <img id="clock" src="./assets/images/clock.png" alt="">
+
+                    
+                        <p id="right-side-text">
+                           Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Ab unde perspiciatis
+                        </p>
+                    </div>
+                    <div class="right-text-section-two">
+                        <span id="head">Loremipsum</span>
+                        <img id="cup" src="./assets/images/cup.png" alt="">
+
+                    
+                        <p id="right-side-text">
+                           Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Ab unde perspiciatis
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="lower-part">
+                <div class="bolder-fonts">
+                    <span class="headline">
+                        loremipsom
+                    </span>
+                    <p class="">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. At quam laboriosam <br> accusamus dolores voluptate consequatur?</p>
+
+                </div>
+                <div>
+
+                    <span class="headline">
+                        loremipsom
+                    </span>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. At quam laboriosam <br> accusamus dolores voluptate consequatur?</p>
+
+                </div>
+                <div>
+
+                    <span class="headline">
+                        loremipsom
+                    </span>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. At quam laboriosam <br> accusamus dolores voluptate consequatur?</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+      <div id="safe-area">
+    <!-- All text should appear within the safe area. -->
+  </div>
+</body>
+</html>

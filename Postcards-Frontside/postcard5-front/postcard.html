@@ -1,0 +1,232 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <title>4x6 Postcard Front</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+
+    @font-face {
+      font-family: "Arial Bold";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Arial+Bold.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Arial Rounded Bold";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Arial+Rounded+Bold.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Arial";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Arial.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Montserrat-light";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Montserrat";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+    }
+
+
+    body {
+      width: 6.25in;
+      height: 4.25in;
+      margin: 0;
+      padding: 0;
+      /* If using an image, the background image should have dimensions of 1875x1275 pixels. */
+      background-image: url(./assets/images/bg.png);
+      background-size: 6.25in 4.25in;
+      background-repeat: no-repeat;
+      /* background-color: #aacc8b; */
+    }
+
+    .header {
+      position: absolute;
+      width: 4.15921in;
+      height: 1.273in;
+      left: -2.51in;
+      top: 2.96861in;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #3c5426;
+      font-size: 20.174pt;
+      color: #D60B51;
+      text-transform:uppercase;
+      line-height: 25px;
+    }
+
+    .website {
+      position: absolute;
+      width: 3.3921in;
+      height: .3964in;
+      left: -2.65in;
+      top: 3.60017973in;
+      /* background-color: #3c5426; */
+      font-family: "Arial Bold";
+      background-color: #D60B51;
+      color: white;
+      text-align: left;
+      line-height: .18964in;
+      font-size: 10.217pt;
+      padding-left: 10px;
+    }
+
+    .arrow {
+      position: absolute;
+      width: .1573in;
+      height: .2531in;
+      left: 5.4827in;
+      top: 2.25in;
+    }
+
+    .var-image-1 {
+      position: absolute;
+      width: 3.0754in;
+      height: 4.25in;
+      left: 3in;
+      top: 0in;
+      object-fit: cover;
+      /* background-image: url(./assets/images/model.png); */
+      /* background-size: auto 4.25in; */
+      background-repeat: no-repeat;
+      background-position-y: center;
+    }
+    
+
+    .shamrock img{
+      position: absolute;
+      width: 1.70984in;
+      /* height: .298in; */
+      left: 1.216804876in;
+      top: 2.67879321in;
+      /* background-image: url(./assets/images/scan-me.png); */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto .3in;
+    }
+
+    .logo-text {
+      position: absolute;
+      width: 2.1897in;
+      height: .2531in;
+      left: -2.658485in;
+      top: .29081055in;
+      font-size: 16.695pt;
+      line-height: 20.034pt;
+    }
+.logo-text img{
+  width: 80px;
+}
+    .logo-footer {
+      /* display: flex; */
+      position: absolute;
+      width: 1.6897in;
+      /* height: .1461in; */
+      left: 1.197985in;
+      top: 3.739954in;
+      font-size: 6.152pt;
+      line-height: 13.182pt;
+      color: white;
+      font-family: "Montserrat";
+      text-align:right;
+      
+    }
+    .model img{
+      position: absolute;
+      width: 2.187897in;
+      /* height: .1461in; */
+      left: .79856985in;
+      top: 0.754054in;
+    }
+.logo-footer img{
+  padding-inline: 4px;
+}
+    #text-shamrock {
+      font-family: "Arial Rounded Bold";
+      color: #3c5426;
+    }
+
+    #text-health {
+      font-family: "Montserrat-light";
+      color: white;
+    }
+
+    
+    .site img{
+      width: 21px;
+      margin-right: 1px;
+      margin-left: 10px;
+
+    }
+    #contacts{
+      position: relative;
+      bottom: 0.03in;
+      font-weight:900;
+      left: 0.03in;
+    }
+    .phone>span{
+      padding-inline: 6px;
+      color: #D60B51;
+      background-color: white;
+    }
+    .site>span{
+      padding-inline: 6px;
+      color: #D60B51;
+      background-color: white;
+    }
+    .phone,.site{
+    }
+    .phone span img{
+      margin-inline: 10px;
+      width: 21px;
+    }
+    #safe-area {
+      position: relative;
+      width: 5.875in;
+      height: 3.875in;
+      left: -2.8875in;
+      top: 0.1875in;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class=" var-image-1">
+    <div class="model">
+      <img src="./assets/images/model.png" alt="">
+    </div>
+  <div class=" header">Hey! Your Neighbor <br> Just Got a New Roof </div>
+  <div class=" website">See How can you too and save<br>$500 with this coupon code</div>
+  <div class=" logo-text"><img src="./assets/images/logo.png" alt=""></div>
+  <div class=" logo-footer">
+    <div class="phone">
+      <span id="contacts" style="margin: right 20px;"> 999 999 999</span>
+      
+
+    </div>
+    <div class="site">
+     <span id="contacts"> WWWW.LOREMIPSOM.COM</span>
+
+    </div>
+
+</div>
+  <div class=" shamrock"><img src="./assets/images/scan-me.png" alt=""></div>
+ 
+  <div id="safe-area">
+   <!--All text should appear within the safe area.-->
+  </div>
+</body>
+
+</html>

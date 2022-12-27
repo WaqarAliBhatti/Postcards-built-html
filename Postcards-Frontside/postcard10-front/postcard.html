@@ -1,0 +1,307 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <title>4x6 Postcard Front</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+
+    @font-face {
+      font-family: "Arial Bold";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Arial+Bold.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Arial Rounded Bold";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Arial+Rounded+Bold.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Arial";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Arial.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Montserrat-light";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Montserrat";
+      src: url(https://s3.us-west-2.amazonaws.com/public.lob.com/solutions/Lob_demo_postcard_conversion/Healthcare+psc/4x6+Healthcare+Postcard/Document+fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+    }
+
+
+    body {
+      width: 6.25in;
+      height: 4.25in;
+      margin: 0;
+      padding: 0;
+      /* If using an image, the background image should have dimensions of 1875x1275 pixels. */
+      background-image: url(./assets/images/bg.png);
+      background-size: 6.25in 4.25in;
+      background-repeat: no-repeat;
+      /* background-color: #aacc8b; */
+    }
+
+    .header {
+      position: absolute;
+      width: 3.921in;
+      height: 1.273in;
+      right: -1.98in;
+      top: .8902361in;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      /* color: #3c5426; */
+      font-size: 26.174pt;
+      color: white;
+      text-transform:uppercase;
+      line-height: 45px;
+      /* font-weight: 600; */
+    }
+
+    .website {
+      position: absolute;
+      width: 3.3921in;
+      height: .2964in;
+      right: .31612615in;
+      top: 2.8325013in;
+      /* background-color: #3c5426; */
+      font-family: "Arial Bold";
+      color: white;
+      text-align: right;
+      line-height: .1964in;
+      font-size: 9.217pt;
+      /* font-weight:100; */
+    }
+
+    .arrow {
+      position: absolute;
+      width: .1573in;
+      height: .2531in;
+      left: 5.4827in;
+      top: 2.25in;
+    }
+
+    .var-image-1 {
+      position: absolute;
+      width: 3.0754in;
+      height: 4.25in;
+      left: 3in;
+      top: 0in;
+      object-fit: cover;
+      /* background-image: url(./assets/images/model.png); */
+      /* background-size: auto 4.25in; */
+      background-repeat: no-repeat;
+      background-position-y: center;
+    }
+    
+
+    .shamrock img{
+      position: absolute;
+      width: 1.984in;
+      /* height: .298in; */
+      left: -2.7526in;
+      top: 2.8621in;
+      /* background-image: url(./assets/images/scan-me.png); */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto .3in;
+    }
+
+    .logo-text {
+      position: absolute;
+      width: 2.1897in;
+      height: .2531in;
+      left: -2.75in;
+      top: .21055in;
+      font-size: 16.695pt;
+      line-height: 20.034pt;
+    }
+    .logo-text img{
+      width: 100px;
+    } 
+
+    .logo-footer {
+      /* display: flex; */
+      position: absolute;
+      width: 3.8897in;
+      /* height: .1461in; */
+      left: 1.125000in;
+      top: 3.65004in;
+      font-size: 6.0952pt;
+      line-height: 6.1px;
+      color: white;
+      font-family: "Montserrat"
+    }
+    .model img{
+      position: absolute;
+      width: 3.357897in;
+      /* height: .1461in; */
+      left: -1.8in;
+      top: 0.554054in;
+    }
+    .logo-footer img{
+    padding-inline: 4px;
+    }
+    #text-shamrock {
+      font-family: "Arial Rounded Bold";
+      color: #3c5426;
+    }
+
+    #text-health {
+      font-family: "Montserrat-light";
+      color: white;
+    }
+
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+      /* background-color: rgba(255, 255, 255, 0.5); */
+    }
+    
+    #contacts{
+      position: relative;
+      bottom: 0.04in;
+      font-weight:bolder;
+      left: -0.2in;
+    }
+    .phone{
+      margin-left: 10px;
+      position: absolute;
+      top: -.15in;
+      left: .69in;
+    }
+    .phone img#phone{
+      margin-inline: 10px;
+      width: 25px;
+    }
+    .site{
+      position: absolute;
+      top: .15in;
+      left: 0.02in;
+    }
+    .site img#site{
+      width: 25px;
+      
+      /* margin-right: 1px; */
+      margin-inline: 15px;
+
+    }
+    img#phone-bg{
+      width: 50px;
+      position:absolute;
+      right: 2.90in;
+      top: -.12in;
+
+    }
+    img#site-bg{
+      width: 50px;
+      position:absolute;
+      right: 1.55in;
+      top: -.12in;
+
+    }
+    #safe-area {
+      position: relative;
+      width: 5.875in;
+      height: 3.875in;
+      left: -2.8875in;
+      top: 0.1875in;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    span#bold-neighbor{
+      font-size: 37px;
+    }
+    #new-roof{
+      font-size: 42px;
+    }
+    span#hey{
+      font-size: 55px;
+      position: absolute;
+      bottom: 100px;
+    }
+    span#your{
+      font-size: 20px;
+      position: absolute;
+      left: 1.345in;
+      top: 0.071in;
+    }
+    .first-line{
+font-size: 26px;
+position: absolute;
+left: .25in;
+} 
+.NEIGHBOUR{
+font-size: 35px;
+right: 2.5in;
+top: .3in;
+position: absolute;
+}  
+.justgota{
+font-size: 26px;
+position:absolute;
+top: .6in;
+left: .25in;
+}   
+.new{
+font-size: 50px;
+font-weight: 100;
+left: 0.55in;
+position: absolute;
+/* justify-content: right; */
+}        
+.roof{
+    font-size: 50px;
+    font-weight: 100;
+    left: .251in;
+    position: absolute;
+    /* justify-content: right; */
+}
+
+  </style>
+</head>
+
+<body>
+  <div class=" var-image-1">
+    <div class="model">
+      <img src="./assets/images/model.png" alt="">
+    </div>
+  <div class=" header"><span class="first-line" >HEY, YOUR</span><br>
+    <span class="NEIGHBOUR"  >NEIGHBOR<br> </span>
+    <span class="justgota"   >JUST GOT A</span><br>
+    <span class="new"        ><strong>NEW</strong></span><br>
+    <span class="roof"       ><strong>ROOF</strong></span><br></div>
+  <div class=" website">See How can you too <br> and save $500 with this <br> coupon code</div>
+  <div class=" logo-text"><img src="./assets/images/logo.png" alt=""></div>
+  <div class=" logo-footer">
+    <div class="phone">
+        <span id="contacts" style="margin: right 20px;"><strong> 999 999 999</strong></span>
+        <img id="phone" src="./assets/images/phone.png" alt="">
+
+    </div>
+    <div >
+     <span class="site"> 
+    <span id="contacts"><strong> WWWW.LOREMIPSOM.COM</strong></span><img id="site" src="./assets/images/site.png" alt="">
+</span>
+    </div>
+
+</div>
+  <div class=" shamrock"><img src="./assets/images/scan-me.png" alt=""></div>
+ 
+  <div id="safe-area">
+   <!--All text should appear within the safe area.-->
+  </div>
+</body>
+
+</html>

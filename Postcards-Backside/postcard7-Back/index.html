@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>postcard</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+
+    width: 6.25in;
+    height: 4.25in;
+    margin: 0;
+    padding: 0;
+    /* If using an image, the background image should have dimensions of 1875x1275 pixels. */
+    background-image: url(./assets/images/bg.png);
+    background-size: 3.25in 1.75in;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.body-wrapper{
+margin: 0%;
+padding: 0%;
+}
+.postcard-body{
+
+}
+.upper-part{
+display: flex;
+/* background-color: #22A698; */
+padding: .1in;
+/* color: white; */
+height: 195px;
+width: 6.3in;
+}
+.right-upper-part{
+    position: absolute;
+    width: 6.2in;
+    right: 2.4513in;
+}
+.right-upper-part-2 p{
+    position: absolute;
+    top: 1.0in;
+    left: 4.39048321in;
+    font-weight: 700;
+    font-size: 12px;
+    color: #184466;
+}
+
+.right-upper-parta p{
+    color: #184466;
+        position: absolute;
+    top: .2128in;
+    left: 4.4065007015in;
+    font-weight: 700;
+    font-size: 12px;
+
+}
+.right-upper-part img{
+position: absolute;
+left: 4.15in;
+top: .1in;
+width: 160px;
+}
+.left-upper-part p{
+    position: absolute;
+    top: .30in;
+    left: .64in;
+text-align: center;
+font-size: 15px;
+font-weight: 500;
+color: white;
+}
+.lower-part{
+    padding: 0.25in;
+    width: 4.1in;
+    font-size: 14px;
+    color: #184466;
+    position: absolute;
+    left: .3in;
+    font-weight: 500;
+}
+.fast-headline{
+    padding-right: 220px;
+}
+.lower-part img#img-to-do{
+    position: absolute;
+    width: 42px;
+    left: .05in;
+    top: .32in;
+}
+.lower-part img#img-calender{
+    position: absolute;
+
+    width: 42px;
+    left: .05in;
+    top: 1.8in;
+
+
+}
+.lower-part img#img-time{
+    position: absolute;
+
+    width: 32px;
+    left: .05in;
+    top: 1.1in;
+
+}
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="postcard-body">
+            <div class="upper-part">
+                <div class="left-upper-part">
+
+                <p>SARAH,2 OF YOUR <br> NEIGHBORS REPLACED <br> THEIR ROOFS FOR FREE! <br> FIND OUT OUR HOW <br> CAN YOU TOO</p>
+
+                </div>
+                <div class="right-upper-parta">
+                    <p>
+                        Loremipsum <br>
+                        Lorem ipsum, dolor sit amet consectetur <br> lorem ipsom consectetur lorem ipsom</p>
+                </div>
+                <div class="right-upper-part-2">
+                    <p>
+                        Loremipsum <br>
+                        Lorem ipsum, dolor sit amet consectetur <br> lorem ipsom consectetur lorem ipsom
+                    </p>
+                </div>
+
+                </div>
+            </div>
+            <div class="lower-part">
+                <div><img id="img-to-do" src="./assets/images/to-do.png" alt="">
+                    <p>Fast <br> Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. At quam laboriosam <br>doremipsom</p>
+
+                </div>
+                <div><img id="img-time" src="./assets/images/time.png" alt="">
+                    <p>Loremipsom <br> Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. At quam laboriosam</p>
+
+                </div>
+                <div><img id="img-calender" src="./assets/images/calender.png" alt="">
+                    <p>Loremipsom <br> Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. At quam laboriosam</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+      <div id="safe-area">
+    <!-- All text should appear within the safe area. -->
+  </div>
+</body>
+</html>

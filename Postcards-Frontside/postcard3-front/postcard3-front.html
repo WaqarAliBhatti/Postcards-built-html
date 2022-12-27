@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Postcard</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+
+    width: 6.25in;
+    height: 4.25in;
+    margin: 0;
+    padding: 0;
+    /* If using an image, the background image should have dimensions of 1875x1275 pixels. */
+    /* background-image: url(https://s3-us-west-2.amazonaws.com/public.lob.com/assets/beach.jpg); */
+    background-size: 6.25in 4.25in;
+    background-repeat: no-repeat;
+}
+.postcard-body{
+    background-image: url(./assets/images/bg.png);
+    width: 820px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    background-position-y: top;
+}
+.postcard-wrapper{
+/* position: relative; */
+display: flex;
+}
+
+.header img{
+    position: relative;
+    top: 4%;
+    left: 400%;
+}
+
+
+.model{
+/* position: absolute; */
+/* position: relative; */
+right: 10%;
+top: 30%;
+
+
+}
+.model img#model{
+    position:relative ;
+    top: 15%;
+    width: 300px;
+}
+.scan-me{
+    /* position: absolute; */
+    position: relative;
+left: 130%;
+    bottom: 20%;    
+}
+.text{
+    /* position:absolute; */
+    color: white;
+    position: relative;
+    margin-top: 12%;
+    left: 5%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.text p.upper-text{
+    line-height: 30px;
+    font-size: 30px;
+
+}
+.first-line{
+font-size: 32px;
+} 
+.NEIGHBOUR{
+font-size: 45px;
+right: 45%;
+position: relative;
+}  
+.justgota{
+font-size: 32px;
+}   
+.new{
+font-size: 56px;
+font-weight: 100;
+left: 10%;
+position: relative;
+justify-content: right;
+}        
+.roof{
+    font-size: 56px;
+    font-weight: 100;
+    left: 2%;
+    position: relative;
+    justify-content: right;
+}
+       p.lower-text{
+        margin-top: 20px;
+        line-height: 25px;
+       }
+.seehow-line{
+
+}
+.andsave-line{
+
+}
+.coupon-text{
+position: relative;
+left: 25%;
+margin-bottom: 40%;
+}
+.phone{
+    position: relative;
+    padding-top: 90%;
+    margin-left: 35%;
+    font-size: 13px;
+}
+.site-text{
+    position: relative;
+    right: 0%;
+    font-size: 13px;
+}
+.lower-text span img{
+    position: relative;
+    left: 20%;
+}
+p.phone-section{
+    margin-top:80%;
+    position: relative;
+}
+p.phone-section span img{
+    position: relative;
+    left: 20%;
+}
+#contacts{
+    position: relative;
+    left: 10%;
+    width: 18px;
+}
+#hey{
+    font-size: 42px;
+}
+#safe-area{
+      position: absolute;
+      width: 7.7875in;
+      height: 5.0475in;
+      left: 0.1875in;
+      top: 0.1875in;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <div class="postcard-body">
+        <div class="postcard-wrapper">
+            
+            <div class="header">
+                <img src="./assets/images/logo.png" alt="">
+                
+            </div>
+            
+            <div class="model">
+            <img id="model" src="./assets/images/model.png" alt="">
+            <div class="scan-me">
+                <img src="./assets/images/scan-me.png" alt="">
+    
+                </div>
+            </div>
+            <div class="text">
+                <p class="upper-text">
+            <span id="hey">HEY,</span><br>
+            YOUR NEIGHBOR <br>
+            JUST GOT <br> 
+            A NEW ROOF
+        </p>
+            <p class="lower-text">
+            See how you can too and save <br> 
+            $500 with this coupon code
+            <p class="phone-section"><span class="phone">999 999 999</span><img id="contacts" src="./assets/images/phone.png" alt=""><br>
+            <span class="site-text">WWWW.LOREMIPSOM.COM</span><img id="contacts" src="./assets/images/site.png" alt="">
+            </p>
+    </p>
+    
+
+
+
+            </div>
+        </div>
+    </div>
+    <div id="safe-area">
+        <!-- All text should appear within the safe area. -->
+       </div>
+</body>
+</html>
